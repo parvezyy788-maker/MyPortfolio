@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-portfolio-website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f38efbf1b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Servies</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI&UX Designer</p>
+          <h1>Hi, I'm <span>Parvez</span><br> Hussain From Pakistan</h1>
+        </div>
+      </div>
+    </div>
+    <!---------about------------->
+     <div id="about">
+      <div class="container">
+       <div class="row">
+         <div class="about-col-1">
+          <img src="images/user.jpg">
+         </div>
+         <div class="about-col-2">
+          <h1 class="Sub-title">About Me</h1>
+          <p>I'm a Full Stack Web Developer with expertise in React.js, 
+            Firebase, and API integration, dedicated to building modern, 
+            responsive web applications. As a BSCS 5th-semester student, I
+            combine my academic knowledge with practical skills to deliver 
+            efficient and scalable solutions. Passionate about problem-solving and 
+            clean code, I thrive on turning ideas into functional, user-friendly
+            experiences. Constantly learning and adapting to new technologies, 
+            I aim to grow as a developer while contributing to innovative 
+            projects. Let's build something amazing together!</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+              <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+              <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+              <li><span>UI&UX</span><br>Designing Websites</li>
+              <li><span>Full Stack</span><br>Web Developer</li>
+              <li><span>React Js</span><br>Firebase & API integration</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+              <li><span>2024-current</span><br>Designing Websites online codewithherry & shardha khapwra</li>
+              <li><span>2024-current</span><br>Web Developer made many projects online</li>
+              <li><span>2025-current</span><br>Firebase & API integration in NetFlix Clone & Weather app</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+              <li><span>2024</span><br>Designing Websites online Youtube learning basic HTML,CSS &JS </li>
+              <li><span>2025</span><br>React JS from Youtube</li>
+              <li><span>2025</span><br>Firebase & API integration form Youtube </li>
+              </ul>
+            </div>
+                  
+         </div>
+       </div>
+      </div>
+     </div>
+     <!-------------services---------->
+     <div id="services">
+      <div class="container">
+        <h1 class="Sub-title">My Services</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Web development is the process of building, designing, and 
+              maintaining websites or web applications. It includes frontend and backend 
+              development, ensuring responsive design, functionality, performance, and user 
+              experience using technologies like HTML, CSS, JavaScript, APIs, databases, and 
+              frameworks.</p>
+              <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code-compare"></i>
+            <h2>API integration</h2>
+            <p>API integration connects different software systems, allowing them to 
+              communicate and share data seamlessly. It enables web applications to access 
+              external services like payment gateways, weather data, or user authentication, 
+              enhancing functionality and user experience efficiently.</p>
+              <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Firebase as a back-end</h2>
+            <p>Firebase as a backend provides a real-time database, authentication, 
+              cloud functions, and hosting services. It allows developers to build secure,
+               scalable web and mobile apps without managing traditional servers, enabling 
+               faster development and real-time user data handling.</p>
+               <a href="#">Learn more</a>
+          </div>
+
+        </div>
+      </div>
+     </div>
+     <!-------------services-------------------->
+     <div id="portfolio">
+      <div class="container">
+        <h1 class="Sub-title">My Services</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+              <h3>Netflix Clone</h3>
+              <p>Built a responsive Netflix clone using React.js with dynamic routing, 
+                API integration, and sleek UI mimicking the original streaming platform.</p>
+                <a href="#"><i class="fa-solid fa-music"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png"><div class="layer">
+              <h3>Weather App</h3>
+              <p>Developed a weather app using React.js that fetches real-time data 
+                from an API, showing current conditions and 5-day forecasts.</p>
+                <a href="#"><i class="fa-solid fa-cloud"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+              <h3>Portfolio</h3>
+              <p>Built a responsive personal portfolio using HTML, CSS, and JavaScript
+                 to showcase projects, skills, and interactive user interface.</p>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+          </div> 
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+     </div>
+     <!----------------Contact--------------->
+     <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="Sub-title">Conatct Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> parvezhussaiin989@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> 03071114753</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+           
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Parvez. Made with<i class="fa-solid fa-heart"></i>by Parvez web developer</p>
+      </div>
+     </div>
+
+
+
+
+
+     <script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(evt, tabName){
+    for (let tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (let tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    document.getElementById(tabName).classList.add("active-tab");
+    evt.currentTarget.classList.add("active-link");
+  }
+</script>
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+  sidemenu.style.right = "0";
+}
+function closemenu(){
+  sidemenu.style.right = "-200px";
+}
+
+
+</script>
+
+</body>
+</html>
